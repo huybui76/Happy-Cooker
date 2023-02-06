@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Happy cook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">noting</string>
+
+    <string name="recipesFragment" >Food</string>
+    <string name="favoriteRecipesFragments">Love</string>
+    <string name="foodJokeFragment">None</string>
 </resources>
