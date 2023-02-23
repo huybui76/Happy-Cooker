@@ -8,8 +8,9 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.foody.models.FoodRecipe
+
 import com.example.happycook.data.Repository
+import com.example.happycook.models.FoodRecipe
 import com.example.happycook.util.NetworkResult
 
 

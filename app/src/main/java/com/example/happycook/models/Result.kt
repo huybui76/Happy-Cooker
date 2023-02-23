@@ -1,5 +1,6 @@
-package com.example.foody.models
+package com.example.happycook.models
 
+import com.example.foody.models.ExtendedIngredient
 import com.google.gson.annotations.SerializedName
 
 data class Result(

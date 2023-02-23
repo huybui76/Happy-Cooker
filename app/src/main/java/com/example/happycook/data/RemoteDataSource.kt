@@ -1,7 +1,8 @@
 package com.example.happycook.data
 
-import com.example.foody.models.FoodRecipe
+
 import com.example.happycook.data.network.FoodRecipesApi
+import com.example.happycook.models.FoodRecipe
 import retrofit2.Response
 import javax.inject.Inject
 
