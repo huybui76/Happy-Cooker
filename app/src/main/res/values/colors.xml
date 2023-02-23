@@ -13,9 +13,7 @@
     <color name="red">#F40000</color>
     <color name="yellow">#E4DB1E</color>
     <color name="mediumGray">#969494</color>
-
-
-
+    <color name="lightGray">#645D5C</color>
 
 
 </resources>
