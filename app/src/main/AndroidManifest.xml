@@ -9,9 +9,10 @@
         android:name=".MyApplication"
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@drawable/cook1_icon"
+
+        android:icon= "@mipmap/ic_app"
         android:label="@string/app_name"
-        android:roundIcon="drawable/cook1_icon"
+        android:roundIcon="@mipmap/ic_app_round"
         android:supportsRtl="true"
         android:theme="@style/SplashScreenStyle"
         android:usesCleartextTraffic="true"
