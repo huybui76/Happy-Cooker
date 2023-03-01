@@ -22,14 +22,14 @@ class RecipesRowBinding {
         @BindingAdapter("onRecipeClickListener")
         @JvmStatic
         fun onRecipeClickListener(recipeRowLayout: ConstraintLayout, result: Result) {
-            Log.d("onRecipeClickListener", "CALLED")
+            //Log.d("onRecipeClickListener", "CALLED")
             recipeRowLayout.setOnClickListener {
                 try {
                     val action =
                         RecipesFragmentDirections.actionRecipesFragmentToDetailsActivity(result)
                     recipeRowLayout.findNavController().navigate(action)
                 } catch (e: Exception) {
-                    Log.d("onRecipeClickListener", e.toString())
+                    //Log.d("onRecipeClickListener", e.toString())
                 }
             }
         }
