@@ -1,18 +1,17 @@
 package com.example.happycook.util
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.happycook.models.Result
 
-class RecipesDiffUtil(
-     private val oldList: List<Result>,
-     private val newList: List<Result>
-) : DiffUtil.Callback() {
+class RecipesDiffUtil<T>(
+    private val oldList: List<T>,
+    private val newList: List<T>
+): DiffUtil.Callback() {
     override fun getOldListSize(): Int {
-       return oldList.size
+        return oldList.size
     }
 
     override fun getNewListSize(): Int {
-       return newList.size
+        return newList.size
     }
 
     override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {

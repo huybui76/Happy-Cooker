@@ -1,22 +1,2 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-        jcenter()
-        maven { url "https://jitpack.io" }
-
-
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
-    repositories {
-        google()
-        mavenCentral()
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
-}
-rootProject.name = "Happy cook"
 include ':app'
+rootProject.name = "HappyCook"

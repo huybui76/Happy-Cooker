@@ -1,13 +1,11 @@
 package com.example.happycook.di
 
-
-import com.example.happycook.data.network.FoodRecipesApi
 import com.example.happycook.util.Constants.Companion.BASE_URL
+import com.example.happycook.data.network.FoodRecipesApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -18,12 +16,15 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    fun provideHttpClient(): OkHttpClient {
+    @Singleton
+    @Provides
+    fun provideHttpClient() : OkHttpClient {
         return OkHttpClient.Builder()
             .readTimeout(15, TimeUnit.SECONDS)
             .connectTimeout(15, TimeUnit.SECONDS)
             .build()
     }
+
     @Singleton
     @Provides
     fun provideConverterFactory(): GsonConverterFactory {
@@ -35,7 +36,6 @@ object NetworkModule {
     fun provideRetrofitInstance(
         okHttpClient: OkHttpClient,
         gsonConverterFactory: GsonConverterFactory
-
     ): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
@@ -49,4 +49,5 @@ object NetworkModule {
     fun provideApiService(retrofit: Retrofit): FoodRecipesApi {
         return retrofit.create(FoodRecipesApi::class.java)
     }
+
 }
